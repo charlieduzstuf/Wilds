@@ -1,76 +1,97 @@
-# Godot Engine
+# Wilds Engine
 
-<p align="center">
-  <a href="https://godotengine.org">
-    <img src="misc/logo/logo_outlined.svg" width="400" alt="Godot Engine logo">
-  </a>
-</p>
+<img width="140" height="81" alt="image" src="https://github.com/user-attachments/assets/d50a30f5-5482-4e47-b42b-bfbeec69765f" />
 
-## 2D and 3D cross-platform game engine
 
-**[Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
-game engine to create 2D and 3D games from a unified interface.** It provides a
-comprehensive set of [common tools](https://godotengine.org/features), so that
-users can focus on making games without having to reinvent the wheel. Games can
-be exported with one click to a number of platforms, including the major desktop
-platforms (Linux, macOS, Windows), mobile platforms (Android, iOS), as well as
-Web-based platforms and [consoles](https://godotengine.org/consoles).
+**A hobby fork of Godot Engine** focused on Unity-like workflow, cross-fork unification, and practical game development features.
 
-## Free, open source and community-driven
+> **Status:** Personal / experimental project. Not under active development.  
+> This is a long-term personal experiment. Expect incomplete features, breaking changes, and long periods of inactivity.
 
-Godot is completely free and open source under the very permissive [MIT license](https://godotengine.org/license).
-No strings attached, no royalties, nothing. The users' games are theirs, down
-to the last line of engine code. Godot's development is fully independent and
-community-driven, empowering users to help shape their engine to match their
-expectations. It is supported by the [Godot Foundation](https://godot.foundation/)
-not-for-profit.
+---
 
-Before being open sourced in [February 2014](https://github.com/godotengine/godot/commit/0b806ee0fc9097fa7bda7ac0109191c9c5e0a1ac),
-Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
-[Ariel Manzur](https://github.com/punto-) for several years as an in-house
-engine, used to publish several work-for-hire titles.
+## Goals
 
-![Screenshot of a 3D scene in the Godot Engine editor](https://raw.githubusercontent.com/godotengine/godot-design/master/screenshots/editor_tps_demo_1920x1080.jpg)
+Wilds aims to evolve Godot in several practical directions:
 
-## Getting the engine
+1. **Unity-inspired UI, Terminology & Structure**  
+   Make the editor, project layout, and naming conventions feel more familiar to Unity users (e.g. Hierarchy, Inspector, Project window concepts, component-style thinking, scene/prefab workflow adjustments) without abandoning Godot’s core strengths.
 
-### Binary downloads
+2. **Unification Across Forks**  
+   Act as a practical meeting point for useful features and improvements from Godot, Redot, Blazium, and other community forks. Prefer compatibility and selective merging over hard divergence.
 
-Official binaries for the Godot editor and the export templates can be found
-[on the Godot website](https://godotengine.org/download).
+3. **Unity Project & Asset Interoperability**  
+   Explore partial (and eventually deeper) support for importing/using Unity projects, assets, and common workflows. Goal is practical interoperability rather than perfect 1:1 compatibility.
 
-### Compiling from source
+4. **Unreal-level 3D Graphics Ambition**  
+   Push rendering quality, lighting, materials, and related systems toward higher-end visual fidelity closer to what Unreal Engine users expect, while remaining realistic about the scope of a hobby project.
 
-[See the official docs](https://docs.godotengine.org/en/latest/engine_details/development/compiling)
-for compilation instructions for every supported platform.
+5. **Built-in Steamworks SDK**  
+   Integrate Steamworks support more tightly into the engine so Steam features (achievements, cloud, multiplayer, overlay, etc.) are easier to use out of the box.
 
-## Community and contributing
+6. **Built-in Source Control**  
+   Provide first-class, integrated source control tooling inside the editor (beyond the existing basic VCS support) to make version control a natural part of the workflow.
 
-Godot is not only an engine but an ever-growing community of users and engine
-developers. The main community channels are listed [on the homepage](https://godotengine.org/community).
+---
 
-The best way to get in touch with the core engine developers is to join the
-[Godot Contributors Chat](https://chat.godotengine.org).
+## Philosophy
 
-To get started contributing to the project, see the [contributing guide](CONTRIBUTING.md).
-This document also includes guidelines for reporting bugs.
+- **Hobby-first** — This is a personal project. Features will land when they land.
+- **Pragmatic** — Prefer useful, usable improvements over purity or perfect architecture.
+- **Respectful of upstream** — Stay close enough to Godot that useful changes can potentially flow both ways.
+- **Honest about scope** — Many of the goals above are large. Progress will be incremental and uneven.
 
-## Documentation and demos
+---
 
-The official documentation is hosted on [Read the Docs](https://docs.godotengine.org).
-It is maintained by the Godot community in its own [GitHub repository](https://github.com/godotengine/godot-docs).
+## Current Status
 
-The [class reference](https://docs.godotengine.org/en/latest/classes/)
-is also accessible from the Godot editor.
+| Area                        | Status          | Notes |
+|----------------------------|-----------------|-------|
+| Base Godot fork            | Planned         | Starting point not yet chosen / frozen |
+| Unity-like UI & naming     | Not started     | High priority concept |
+| Fork feature unification   | Research        | Looking at Redot, Blazium, others |
+| Unity project import       | Idea stage      | Very ambitious |
+| High-end 3D rendering      | Idea stage      | Long-term goal |
+| Steamworks integration     | Planned         | Desired for shipping games |
+| Built-in source control    | Planned         | Quality-of-life focus |
 
-We also maintain official demos in their own [GitHub repository](https://github.com/godotengine/godot-demo-projects)
-as well as the [Asset Store](https://store.godotengine.org/).
+This README will be updated if/when concrete work begins.
 
-There are also a number of other
-[learning resources](https://docs.godotengine.org/en/latest/community/tutorials.html)
-provided by the community, such as text and video tutorials, demos, etc.
-Consult the [community channels](https://godotengine.org/community)
-for more information.
+---
 
-[![Code Triagers Badge](https://www.codetriage.com/godotengine/godot/badges/users.svg)](https://www.codetriage.com/godotengine/godot)
-[![Translate on Weblate](https://hosted.weblate.org/widgets/godot-engine/-/godot/svg-badge.svg)](https://hosted.weblate.org/engage/godot-engine/?utm_source=widget)
+## Why “Wilds”?
+
+A short, distinctive name that doesn’t collide with existing Godot forks. It also reflects the idea of exploring a less constrained, more “wild” direction from the main engine while remaining a fork rather than a complete rewrite.
+
+---
+
+## Relationship to Other Projects
+
+- **Godot** — Upstream foundation. Wilds is a fork, not a competitor.
+- **Redot / Blazium / other forks** — Potential sources of features and ideas. The long-term hope is selective unification rather than fragmentation.
+- **Unity / Unreal** — Inspiration for workflow and visual targets, not direct competitors in the open-source space.
+
+---
+
+## Contributing / Feedback
+
+This is currently a personal project with no active development schedule.  
+
+If you are interested in the ideas above, feel free to open an issue for discussion. Pull requests are not expected at this stage.
+
+---
+
+## License
+
+Wilds Engine will follow the same license as the Godot version it is based on (MIT).  
+Any additional code written specifically for Wilds will also be released under MIT unless otherwise noted.
+
+---
+
+## Disclaimer
+
+This project is experimental. It may never reach a usable state for real games. Use at your own risk. Do not rely on it for production work.
+
+---
+
+*Personal hobby project — last updated late 2026.*
